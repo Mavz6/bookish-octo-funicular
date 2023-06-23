@@ -1,0 +1,12 @@
+import random
+
+def roll_dice():
+    return random.randint(1, 6)
+
+num_rolls = int(input("Enter the number of times to roll the dice: "))
+
+print("Rolling the dice", num_rolls, "times...")
+print("Results:")
+for _ in range(num_rolls):
+    dice_result = roll_dice()
+    print(dice_result)
